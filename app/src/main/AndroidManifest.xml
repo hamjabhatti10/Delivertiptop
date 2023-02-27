@@ -13,18 +13,14 @@
     <application
         android:name="com.hamza.delivertiptop.application.DeliverTipTopApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/app_icon"
+        android:icon="@mipmap/ic_deliverytitop"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/app_icon_round"
+        android:roundIcon="@mipmap/ic_deliverytitop"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity
-            android:name="com.hamza.delivertiptop.ui.activities.dataStoreActivity.DataStoreActivity"
-            android:exported="true">
 
-        </activity>
         <activity
             android:name="com.hamza.delivertiptop.ui.activities.splashActivity.SplashActivity"
             android:exported="true"

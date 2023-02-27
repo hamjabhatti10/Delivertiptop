@@ -39,16 +39,5 @@ class SplashActivity : BaseActivity() {
         ).get(SplashViewModel::class.java)
 
 
-        @Suppress("DEPRECATION")
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            window.insetsController?.hide(WindowInsets.Type.statusBars())
-        } else {
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-            )
-        }
-        mHandler = Handler(Looper.getMainLooper())
-        mHandler?.postDelayed(mRunnable, Constants.SPLASHDELAY.toLong())
     }
 }
