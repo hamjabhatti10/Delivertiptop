@@ -1,0 +1,11 @@
+change log need to be done as listed below
+
+
+TODO:
+1) Implement advance crashlytics like add logs in firebase
+2) Fix phone number validation issue.
+3) Add generic validation process.
+4) Add permission handler base fragment using this (https://premsinghsodha7.medium.com/android-runtime-permissions-with-coroutines-9722bb04657e) article
+5) Add onDataFound optional call back in the recyclerview adapter. ( the problem is when no data found call then there is no cll back to hide that message so add new optional callback to hide that message)
+6) Make noDataFound callback Optional too.
+DONE:
