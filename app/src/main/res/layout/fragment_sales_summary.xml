@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:textSize="@dimen/_40sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Sales Summary" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Net Sale"/>
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="@dimen/_150dp"
+            android:text="$38,591.2"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Tax"/>
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="@dimen/_150dp"
+            android:text="$0.00"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Tips"/>
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="@dimen/_150dp"
+            android:text="$0.00"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Gift Card Sales"/>
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="right"
+            android:layout_marginHorizontal="@dimen/_150dp"
+            android:text="$0.00"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Refund by Amount"/>
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="@dimen/_100dp"
+            android:text="($171.83)"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Delivery Fee"/>
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="@dimen/_150dp"
+            android:text="$0.00"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Total"/>
+
+        <TextView
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/_150dp"
+            android:text="$38,432.68"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_below="@+id/textViewTips"
+        android:background="@android:color/darker_gray"/>
+
+
+
+
+    </LinearLayout>
+

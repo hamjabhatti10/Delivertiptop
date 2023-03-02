@@ -6,8 +6,9 @@ import androidx.fragment.app.Fragment
 import com.hamza.delivertiptop.R
 import com.hamza.delivertiptop.databinding.ActivityMainBinding
 import com.hamza.delivertiptop.ui.fragments.balanceFragment.BalanceFragment
+import com.hamza.delivertiptop.ui.fragments.homeFragment.HomeFragment
 import com.hamza.delivertiptop.ui.fragments.reportsFragment.ReportsFragment
-import com.hamza.delivertiptop.ui.fragments.settingFragment.SettingFragment
+import com.hamza.delivertiptop.ui.fragments.moreFragment.MoreFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,15 +18,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+        replaceFragment(HomeFragment())
         buttonNavigation()
     }
 
     private fun buttonNavigation() {
         mBinding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
+                R.id.itemHome -> replaceFragment(HomeFragment())
                 R.id.itemReports -> replaceFragment(ReportsFragment())
                 R.id.itemBalance -> replaceFragment(BalanceFragment())
-                R.id.itemSettings -> replaceFragment(SettingFragment())
+                R.id.itemMore -> replaceFragment(MoreFragment())
 
 
             }

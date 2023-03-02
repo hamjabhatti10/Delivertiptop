@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.fragments.moreBalanceFragment.MoreBalanceFragment">
+
+
+        <TextView
+            android:id="@+id/textViewSales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_10dp"
+            android:text="@string/sales"
+            android:textStyle="bold"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/textViewCurrentDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_10dp"
+            android:text="@string/current_drawer"
+            android:textStyle="bold"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/textViewDrawerHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_10dp"
+            android:drawablePadding="@dimen/_10dp"
+            android:text="@string/drawer_history"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/textViewDisputes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_10dp"
+            android:drawablePadding="@dimen/_10dp"
+            android:text="@string/disputes"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250dp"
+        android:orientation="vertical"
+        android:background="@color/gray">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageViewClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_close_24"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_20dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Get Free Processing!"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="Known someone who might benefit from using Square?
+            Send a referrals or share your link."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:text="@string/send_referral"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+

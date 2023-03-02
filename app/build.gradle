@@ -144,7 +144,8 @@ dependencies {
     implementation 'com.github.jkwiecien:EasyImage:3.0.4'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.0'
 
-
+//    country picker
+    implementation 'com.hbb20:ccp:2.6.1'
 
     //event bus green root
     implementation 'org.greenrobot:eventbus:3.3.1'

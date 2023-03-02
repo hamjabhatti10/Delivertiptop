@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:text="@string/settings"
+            android:textSize="@dimen/_40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_10dp"
+            android:text="@string/reports"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_reports" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/textViewBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_10dp"
+            android:text="@string/balance"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_balance" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/textViewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/_10dp"
+            android:drawablePadding="@dimen/_10dp"
+            android:text="@string/account"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_account" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/textViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/_10dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:text="Items"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/ic_items" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/textViewCustomers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/_10dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:text="Customers"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/ic_customer" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/textViewOnlineCheckOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/_10dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:text="Online Checkout"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/ic_online_checkout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/textViewTeams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/_10dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:text="Teams"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/ic_team" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/textViewAdd_Ons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/_10dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:text="Add-Ons"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/ic_add_ons" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/textViewRewardsAndReferrals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/_10dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:text="Rewards and Referrals"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/ic_rewards" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/textViewSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/_10dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:text="Support"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/ic_support" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>

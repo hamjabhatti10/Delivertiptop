@@ -65,5 +65,26 @@
     <string name="reports">Reports</string>
     <string name="balance">Balance</string>
     <string name="account">Account</string>
+    <string name="login">Login</string>
+    <string name="location">Location</string>
+    <string name="general">General</string>
+    <string name="business_information">Business Information</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="transfer">Transfer</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_email">Business Email</string>
+    <string name="business_phone_number">Business Phone Number</string>
+    <string name="register">Register</string>
+    <string name="transaction">Transaction</string>
+    <string name="search_receipt_or_card">Search Receipt or Card</string>
+    <string name="home">Home</string>
+    <string name="more">More</string>
+    <string name="link_account">Link Account</string>
+    <string name="payout">Payout</string>
+    <string name="disputes">Disputes</string>
+    <string name="drawer_history">Drawer History</string>
+    <string name="current_drawer">Current Drawer</string>
+    <string name="sales">Sales</string>
+    <string name="send_referral">Send referral</string>
 
 </resources>

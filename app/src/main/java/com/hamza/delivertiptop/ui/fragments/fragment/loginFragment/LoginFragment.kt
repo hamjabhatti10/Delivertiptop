@@ -45,9 +45,9 @@ class LoginFragment : BaseFragment() {
             TextUtils.isEmpty(mBinding.editTextEmail.text.toString()) -> {
                 mBinding.editTextEmail.error = "Required Email"
             }
-            !Patterns.EMAIL_ADDRESS.matcher(mBinding.editTextEmail.text.toString()).matches() -> {
-                mBinding.editTextEmail.error = "Invalid Email"
-            }
+//            !Patterns.EMAIL_ADDRESS.matcher(mBinding.editTextEmail.text.toString()).matches() -> {
+//                mBinding.editTextEmail.error = "Invalid Email"
+//            }
             TextUtils.isEmpty(mBinding.editTextPassword.text.toString()) -> {
                 mBinding.editTextPassword.error = "Required Password"
             }  else -> {

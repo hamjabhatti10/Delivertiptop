@@ -13,9 +13,9 @@
     <application
         android:name="com.hamza.delivertiptop.application.DeliverTipTopApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_deliverytitop"
+        android:icon="@mipmap/icon_deliverytitop"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_deliverytitop"
+        android:roundIcon="@mipmap/icon_deliverytitop"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
@@ -25,15 +25,18 @@
             android:name="com.hamza.delivertiptop.ui.activities.splashActivity.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.hamza.delivertiptop.ui.activities.mainActivity.MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.hamza.delivertiptop.ui.activities.mainActivity.MainActivity"
-            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.hamza.delivertiptop.ui.activities.serverSettingActivity.ServerSettingActivity"
             android:screenOrientation="portrait" />

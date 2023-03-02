@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.fragments.balanceFragment.BalanceFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:padding="@dimen/_15dp"
+            android:text="@string/transfer"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-10dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_30sp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="$0.00"
+            android:textStyle="bold"
+            android:textSize="@dimen/_30sp"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:text="@string/transfer"/>
+
+
+
+    </LinearLayout>
+</layout>

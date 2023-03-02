@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
     <item
         android:id="@+id/itemReports"
-        android:title="Reports"
+        android:title="@string/reports"
         android:icon="@drawable/ic_reports"/>
     <item
         android:id="@+id/itemBalance"
-        android:title="Balance"
+        android:title="@string/balance"
         android:icon="@drawable/ic_balance"/>
     <item
-        android:id="@+id/itemSettings"
-        android:title="Settings"
-        android:icon="@drawable/ic_setting"/>
+        android:id="@+id/itemMore"
+        android:title="@string/more"
+        android:icon="@drawable/ic_more"/>
 </menu>

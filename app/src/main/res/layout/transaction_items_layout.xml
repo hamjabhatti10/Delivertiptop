@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$35.77"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <DigitalClock
+            android:id="@+id/digitalClock"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/textViewReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPrice"
+            android:text="D-14, Chiken Fingers with French..."
+            android:textSize="@dimen/_20sp"
+            android:textColor="@color/black"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

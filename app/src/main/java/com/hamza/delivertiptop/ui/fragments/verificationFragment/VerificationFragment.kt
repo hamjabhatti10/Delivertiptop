@@ -1,5 +1,6 @@
 package com.hamza.delivertiptop.ui.fragments.verificationFragment
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.text.TextUtils
@@ -9,7 +10,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.hamza.delivertiptop.R
 import com.hamza.delivertiptop.databinding.FragmentVerificationBinding
+import com.hamza.delivertiptop.ui.activities.mainActivity.MainActivity
 import com.hamza.delivertiptop.ui.base.BaseFragment
+import com.hamza.delivertiptop.ui.fragments.reportsFragment.ReportsFragment
+import com.hamza.delivertiptop.utils.ActivityUtils
 
 class VerificationFragment : BaseFragment() {
 
@@ -42,6 +46,10 @@ class VerificationFragment : BaseFragment() {
             TextUtils.isEmpty(mBinding.editTextVerificationCode.text.toString()) -> {
                 mBinding.editTextVerificationCode.error = "Verification Code Required"
             } else -> {
+            activity.let {
+                val intent = Intent(it, MainActivity::class.java)
+                startActivity(intent)
+            }
 
         }
     }

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:textSize="@dimen/_40sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/account" />
+
+
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:text="@string/login"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textViewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15dp"
+            android:padding="@dimen/_10dp"
+            android:text="@string/account"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_100dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@null"
+            android:gravity="right"
+            android:inputType="textEmailAddress"
+            android:text="Jibranzafar10@gmail.com"
+            android:textColor="@color/colorAccent"
+            tools:ignore="RtlHardcoded" />
+
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_below="@+id/textViewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_marginTop="@dimen/_15dp"
+            android:padding="@dimen/_10dp"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USA"
+            android:layout_below="@id/editTextAccount"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_180dp"
+            android:layout_marginTop="@dimen/_80dp"
+            android:background="@null"
+            android:gravity="right"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_below="@+id/textViewLocation"
+            android:background="@android:color/darker_gray"/>
+
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/textViewGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:text="@string/general" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+
+        <TextView
+            android:id="@+id/textViewBusinessInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:text="@string/business_information"
+            android:textStyle="bold"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+
+        <TextView
+            android:id="@+id/textViewBankAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:text="@string/bank_account"
+            android:textStyle="bold"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/textViewTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15dp"
+            android:padding="@dimen/_10dp"
+            android:text="@string/transfer"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+    </LinearLayout>

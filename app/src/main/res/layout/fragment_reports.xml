@@ -4,22 +4,35 @@
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:src="@drawable/ic_chart_line_uptrend_xyaxis"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+
         <TextView
+            android:id="@+id/textViewReports"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="15dp"
-            android:text="Reports"
-            android:textSize="30dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:padding="@dimen/_10dp"
+            android:text="@string/reports"
+            android:textSize="@dimen/_40sp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,7 +73,8 @@
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     app:tabSelectedTextColor="@color/black"
-                    app:tabIndicator="@color/grey">
+                    app:tabIndicator="@color/grey"
+                    app:tabBackground="@drawable/custom_tab_background">
 
                     <com.google.android.material.tabs.TabItem
                         android:layout_width="match_parent"
@@ -87,6 +101,82 @@
                 </com.google.android.material.tabs.TabLayout>
             </androidx.cardview.widget.CardView>
 
+
+
         </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewSaleSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:text="SALES SUMMARY: OVERVIEW"/>
+
+        <ImageView
+            android:id="@+id/imageViewSalesSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_25dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            app:tint="@color/colorAccent" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/_70dp"
+            android:layout_below="@+id/textViewSaleSummary"
+            android:background="@android:color/darker_gray"/>
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/_100dp"
+            android:layout_below="@+id/line1"
+            android:background="@android:color/darker_gray"/>
+
+
+
+    <TextView
+        android:id="@+id/textViewGrossSale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:text="GROSS SALE"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_120dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewGrossSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_127dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:src="@drawable/ic_baseline_more_horiz_24"
+        app:tint="@color/colorAccent" />
+
+    <DigitalClock
+        android:layout_below="@+id/textViewGrossSale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:textColor="@color/quantum_grey400"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    </RelativeLayout>
 
     </LinearLayout>
