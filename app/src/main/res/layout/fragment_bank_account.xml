@@ -90,10 +90,18 @@
         android:layout_height="@dimen/_1dp"
         android:background="@android:color/darker_gray"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:src="@drawable/ic_bank"
+        android:layout_gravity="center"
+        app:tint="@color/color_black" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_20dp"
         android:gravity="center_horizontal"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -109,15 +117,17 @@
 in your bank account settings."/>
 
     <Button
+        android:id="@+id/buttonLinkAccount"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp"
         android:background="@drawable/rounded_button"
         android:layout_marginTop="@dimen/_40dp"
         android:layout_marginStart="@dimen/_20dp"
         android:layout_marginEnd="@dimen/_20dp"
-        android:text="@string/transfer"/>
+        android:text="@string/link_account"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCancel"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp"
         android:background="@drawable/rounded_button_white_background"

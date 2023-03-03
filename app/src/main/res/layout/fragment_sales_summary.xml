@@ -17,7 +17,7 @@
             android:textSize="@dimen/_40sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Sales Summary" />
+            android:text="@string/sales_summary" />
 
 
 
@@ -31,14 +31,14 @@
             android:layout_width="@dimen/_100dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="Net Sale"/>
+            android:text="@string/net_sale"/>
 
         <TextView
             android:layout_width="@dimen/_100dp"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textColor="@color/black"
-            android:layout_marginHorizontal="@dimen/_150dp"
+            android:layout_marginHorizontal="@dimen/_120dp"
             android:text="$38,591.2"/>
 
 
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textColor="@color/black"
-            android:layout_marginHorizontal="@dimen/_150dp"
+            android:layout_marginHorizontal="@dimen/_120dp"
             android:text="$0.00"/>
 
 
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textColor="@color/black"
-            android:layout_marginHorizontal="@dimen/_150dp"
+            android:layout_marginHorizontal="@dimen/_120dp"
             android:text="$0.00"/>
 
 
@@ -118,14 +118,14 @@
             android:layout_width="@dimen/_100dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="Gift Card Sales"/>
+            android:text="@string/gift_card_sales"/>
 
         <TextView
             android:layout_width="@dimen/_100dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:gravity="right"
-            android:layout_marginHorizontal="@dimen/_150dp"
+            android:layout_marginHorizontal="@dimen/_120dp"
             android:text="$0.00"/>
 
 
@@ -147,14 +147,14 @@
             android:layout_width="@dimen/_150dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="Refund by Amount"/>
+            android:text="@string/refund_by_amount"/>
 
         <TextView
             android:layout_width="@dimen/_100dp"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textColor="@color/black"
-            android:layout_marginHorizontal="@dimen/_100dp"
+            android:layout_marginHorizontal="@dimen/_70dp"
             android:text="($171.83)"/>
 
 
@@ -176,14 +176,14 @@
             android:layout_width="@dimen/_100dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="Delivery Fee"/>
+            android:text="@string/delivery_fee"/>
 
         <TextView
             android:layout_width="@dimen/_100dp"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textColor="@color/black"
-            android:layout_marginHorizontal="@dimen/_150dp"
+            android:layout_marginHorizontal="@dimen/_120dp"
             android:text="$0.00"/>
 
 
@@ -206,7 +206,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:text="Total"/>
+            android:text="@string/total"/>
 
         <TextView
             android:layout_width="@dimen/_100dp"
@@ -214,7 +214,7 @@
             android:gravity="right"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:layout_marginHorizontal="@dimen/_150dp"
+            android:layout_marginHorizontal="@dimen/_120dp"
             android:text="$38,432.68"/>
 
 
@@ -225,7 +225,6 @@
         android:layout_marginTop="@dimen/_5dp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1dp"
-        android:layout_below="@+id/textViewTips"
         android:background="@android:color/darker_gray"/>
 
 

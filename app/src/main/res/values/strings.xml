@@ -57,7 +57,6 @@
     <string name="maximum_image_select_message">You can only select maximum <![CDATA[<b><font color=#1F72A3> %1$s </font></b>]]> images</string>
     <string name="selectVideo">Select Video</string>
     <string name="max_video_msg">You can select only one video</string>
-    <string name="sign_in">Sign in</string>
     <string name="email_address">Email address</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
@@ -86,5 +85,13 @@
     <string name="current_drawer">Current Drawer</string>
     <string name="sales">Sales</string>
     <string name="send_referral">Send referral</string>
+    <string name="sales_summary">Sales Summary</string>
+    <string name="net_sale">Net Sale</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="total">Total</string>
+    <string name="refund_by_amount">Refund by Amount</string>
+    <string name="gift_card_sales">Gift Card Sales</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
 
 </resources>

@@ -13,11 +13,13 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="@dimen/_50dp"
-            android:layout_height="@dimen/_50dp"
+            android:id="@+id/imageViewChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10dp"
             android:layout_marginEnd="@dimen/_10dp"
-            android:src="@drawable/ic_chart_line_uptrend_xyaxis"
-            android:layout_alignParentEnd="true"/>
+            android:src="@drawable/ic_chart_line_uptrend_xyaxis" />
 
     </RelativeLayout>
 
@@ -27,7 +29,7 @@
             android:id="@+id/textViewReports"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_5dp"
             android:padding="@dimen/_10dp"
             android:text="@string/reports"
             android:textSize="@dimen/_40sp"
@@ -37,8 +39,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/grey"
+            android:background="@drawable/rounded_background_grey"
             android:orientation="vertical">
 
             <DigitalClock
@@ -113,69 +114,218 @@
             android:id="@+id/textViewSaleSummary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
             android:padding="@dimen/_10dp"
+            android:text="SALES SUMMARY: OVERVIEW"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_20dp"
-            android:text="SALES SUMMARY: OVERVIEW"/>
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageViewSalesSummary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_11dp"
             android:layout_marginEnd="@dimen/_10dp"
             android:src="@drawable/ic_baseline_more_horiz_24"
             app:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView39.50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewSalesSummary"
+            android:layout_marginTop="@dimen/_10dp"
+            android:padding="@dimen/_10dp"
+            android:text="$39.50k"
+            android:textColor="@color/color_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView39.50"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="-14dp"
+            android:textSize="@dimen/_10dp"
+            android:text="Gross Sales" />
+
+        <TextView
+            android:id="@+id/textView873"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="873"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:gravity="center"
+            android:padding="@dimen/_10dp"
+            android:layout_below="@id/imageViewSalesSummary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView873"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="-14dp"
+            android:text="Sales"
+            android:textSize="@dimen/_10dp" />
+
+        <TextView
+            android:id="@+id/textView45.25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_below="@id/imageViewSalesSummary"
+            android:gravity="right"
+            android:padding="@dimen/_10dp"
+            android:text="$45.25k"
+            android:textColor="@color/color_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView45.25"
+            android:layout_marginStart="345dp"
+            android:gravity="right"
+            android:layout_marginTop="-14dp"
+            android:text="Average Sales"
+            android:textSize="@dimen/_10dp" />
+
 
         <View
             android:id="@+id/line1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1dp"
-            android:layout_marginTop="@dimen/_70dp"
             android:layout_below="@+id/textViewSaleSummary"
-            android:background="@android:color/darker_gray"/>
+            android:layout_marginTop="60dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView38.59"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="$38.59k"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:padding="@dimen/_10dp"
+            android:layout_below="@id/line1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView38.59"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="-14dp"
+            android:textSize="@dimen/_10dp"
+            android:text="Net Sales" />
+
+        <TextView
+            android:id="@+id/textView122.38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="($122.38)"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:gravity="center"
+            android:padding="@dimen/_10dp"
+            android:layout_below="@id/line1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView122.38"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="-14dp"
+            android:text="Refunds"
+            android:textSize="@dimen/_10dp" />
+
+        <TextView
+            android:id="@+id/textView782.52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_below="@id/line1"
+            android:gravity="right"
+            android:padding="@dimen/_10dp"
+            android:text="($782.52)"
+            android:textColor="@color/color_black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView782.52"
+            android:layout_marginStart="330dp"
+            android:gravity="right"
+            android:layout_marginTop="-14dp"
+            android:text="Discount n comps"
+            android:textSize="@dimen/_10dp" />
+
         <View
             android:id="@+id/line2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1dp"
-            android:layout_marginTop="@dimen/_100dp"
             android:layout_below="@+id/line1"
-            android:background="@android:color/darker_gray"/>
+            android:layout_marginTop="@dimen/_70dp"
+            android:background="@android:color/darker_gray" />
 
 
+        <TextView
+            android:id="@+id/textViewGrossSale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="@dimen/_100dp"
+            android:padding="@dimen/_10dp"
+            android:text="GROSS SALE"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textViewGrossSale"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/line2"
-        android:text="GROSS SALE"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:padding="@dimen/_10dp"
-        android:layout_marginTop="@dimen/_120dp"/>
+        <ImageView
+            android:id="@+id/imageViewGrossSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            app:tint="@color/colorAccent" />
 
-    <ImageView
-        android:id="@+id/imageViewGrossSale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/line2"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="@dimen/_127dp"
-        android:layout_marginEnd="@dimen/_10dp"
-        android:src="@drawable/ic_baseline_more_horiz_24"
-        app:tint="@color/colorAccent" />
+        <DigitalClock
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewGrossSale"
+            android:gravity="center_horizontal"
+            android:textColor="@color/quantum_grey400"
+            android:textSize="20sp" />
 
-    <DigitalClock
-        android:layout_below="@+id/textViewGrossSale"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10dp"
-        android:textColor="@color/quantum_grey400"
-        android:gravity="center"
-        android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/textViewSale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clock"
+            android:textColor="@color/color_black"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textSize="@dimen/_20dp"
+            android:text="@string/sales"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_30dp"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textViewSale" />
+
+
 
     </RelativeLayout>
 
