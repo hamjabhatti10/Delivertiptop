@@ -42,12 +42,12 @@
             android:background="@drawable/rounded_background_grey"
             android:orientation="vertical">
 
-            <DigitalClock
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10dp"
-                android:textColor="@color/colorAccent"
-                android:gravity="center"
+                android:text="02:06:2023"
+                android:layout_gravity="center_horizontal"
                 android:textSize="20sp"/>
 
             <View
@@ -70,6 +70,7 @@
                 app:cardMaxElevation="5dp">
 
                 <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
@@ -105,14 +106,60 @@
 
 
         </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutNoDataFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_slider"
+            android:layout_marginTop="@dimen/_50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="No Transaction for time period"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Transaction took place in the period time you selected. Try selection a
+different time frame."
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_black"/>
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginVertical="@dimen/_25dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="@dimen/_20dp"
+            android:text="Select Time Frame" />
+    </LinearLayout>
+
 
     <RelativeLayout
+        android:id="@+id/layoutAllViews"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:visibility="visible">
 
         <TextView
             android:id="@+id/textViewSaleSummary"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5dp"
             android:padding="@dimen/_10dp"
@@ -131,65 +178,63 @@
             app:tint="@color/colorAccent" />
 
         <TextView
-            android:id="@+id/textView39.50"
-            android:layout_width="match_parent"
+            android:id="@+id/textViewGrossSaleValue"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageViewSalesSummary"
             android:layout_marginTop="@dimen/_10dp"
-            android:padding="@dimen/_10dp"
+            android:paddingHorizontal="@dimen/_10dp"
             android:text="$39.50k"
             android:textColor="@color/color_black"
             android:textStyle="bold" />
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView39.50"
-            android:layout_marginStart="@dimen/_10dp"
-            android:layout_marginTop="-14dp"
+            android:layout_below="@+id/textViewGrossSaleValue"
+            android:paddingHorizontal="@dimen/_10dp"
             android:textSize="@dimen/_10dp"
             android:text="Gross Sales" />
 
         <TextView
-            android:id="@+id/textView873"
-            android:layout_width="match_parent"
+            android:id="@+id/textViewSalesValue"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10dp"
             android:text="873"
             android:textStyle="bold"
             android:textColor="@color/color_black"
-            android:gravity="center"
-            android:padding="@dimen/_10dp"
+            android:paddingHorizontal="@dimen/_10dp"
+            android:layout_centerHorizontal="true"
             android:layout_below="@id/imageViewSalesSummary"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView873"
-            android:layout_marginStart="195dp"
-            android:layout_marginTop="-14dp"
+            android:layout_below="@+id/textViewSalesValue"
+            android:layout_centerHorizontal="true"
             android:text="Sales"
             android:textSize="@dimen/_10dp" />
 
         <TextView
-            android:id="@+id/textView45.25"
-            android:layout_width="match_parent"
+            android:id="@+id/textViewAverageSalesValue"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
             android:layout_below="@id/imageViewSalesSummary"
-            android:gravity="right"
-            android:padding="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:paddingHorizontal="@dimen/_10dp"
             android:text="$45.25k"
+            android:layout_alignParentRight="true"
             android:textColor="@color/color_black"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView45.25"
-            android:layout_marginStart="345dp"
-            android:gravity="right"
-            android:layout_marginTop="-14dp"
+            android:layout_below="@+id/textViewAverageSalesValue"
+            android:layout_alignParentRight="true"
+            android:paddingHorizontal="@dimen/_10dp"
             android:text="Average Sales"
             android:textSize="@dimen/_10dp" />
 
@@ -203,63 +248,65 @@
             android:background="@android:color/darker_gray" />
 
         <TextView
-            android:id="@+id/textView38.59"
-            android:layout_width="match_parent"
+            android:id="@+id/textViewNetSalesValue"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10dp"
             android:text="$38.59k"
             android:textStyle="bold"
             android:textColor="@color/color_black"
-            android:padding="@dimen/_10dp"
+            android:paddingHorizontal="@dimen/_10dp"
             android:layout_below="@id/line1"/>
 
         <TextView
+            android:id="@+id/textViewNetSales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView38.59"
-            android:layout_marginStart="@dimen/_10dp"
-            android:layout_marginTop="-14dp"
+            android:layout_below="@+id/textViewNetSalesValue"
+            android:paddingHorizontal="@dimen/_10dp"
             android:textSize="@dimen/_10dp"
             android:text="Net Sales" />
 
         <TextView
-            android:id="@+id/textView122.38"
-            android:layout_width="match_parent"
+            android:id="@+id/textViewRefundsValue"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10dp"
             android:text="($122.38)"
             android:textStyle="bold"
             android:textColor="@color/color_black"
-            android:gravity="center"
-            android:padding="@dimen/_10dp"
+            android:paddingHorizontal="@dimen/_10dp"
+            android:layout_centerHorizontal="true"
             android:layout_below="@id/line1"/>
         <TextView
+            android:id="@+id/textViewRefunds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView122.38"
-            android:layout_marginStart="195dp"
-            android:layout_marginTop="-14dp"
+            android:layout_below="@+id/textViewRefundsValue"
+            android:paddingHorizontal="@dimen/_10dp"
+            android:layout_centerHorizontal="true"
             android:text="Refunds"
             android:textSize="@dimen/_10dp" />
 
         <TextView
-            android:id="@+id/textView782.52"
-            android:layout_width="match_parent"
+            android:id="@+id/textViewDiscountAndCompsValue"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
             android:layout_below="@id/line1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_10dp"
             android:gravity="right"
-            android:padding="@dimen/_10dp"
+            android:paddingHorizontal="@dimen/_10dp"
             android:text="($782.52)"
             android:textColor="@color/color_black"
             android:textStyle="bold" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView782.52"
-            android:layout_marginStart="330dp"
-            android:gravity="right"
-            android:layout_marginTop="-14dp"
+            android:layout_below="@+id/textViewDiscountAndCompsValue"
+            android:paddingHorizontal="@dimen/_10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
             android:text="Discount n comps"
             android:textSize="@dimen/_10dp" />
 
@@ -294,20 +341,21 @@
             android:src="@drawable/ic_baseline_more_horiz_24"
             app:tint="@color/colorAccent" />
 
-        <DigitalClock
-            android:id="@+id/clock"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewGrossSale"
-            android:gravity="center_horizontal"
-            android:textColor="@color/quantum_grey400"
+            android:layout_below="@+id/imageViewGrossSale"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="02:06:2023"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textViewSale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/clock"
+            android:layout_below="@+id/textViewDate"
             android:textColor="@color/color_black"
             android:layout_marginTop="@dimen/_10dp"
             android:textSize="@dimen/_20dp"
@@ -319,11 +367,12 @@
             android:id="@+id/barChart"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_20dp"
-            android:layout_marginEnd="@dimen/_20dp"
-            android:layout_marginTop="@dimen/_10dp"
+            android:layout_below="@+id/textViewSale"
             android:layout_alignParentBottom="true"
-            android:layout_below="@+id/textViewSale" />
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:visibility="gone"/>
 
 
 

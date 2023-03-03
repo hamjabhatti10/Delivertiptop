@@ -6,13 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
+import com.google.android.material.tabs.TabLayout
 import com.hamza.delivertiptop.R
 import com.hamza.delivertiptop.databinding.FragmentReportsBinding
 import com.hamza.delivertiptop.ui.base.BaseFragment
-import com.hamza.delivertiptop.ui.fragments.day1Fragment.Day1Fragment
 import com.hamza.delivertiptop.ui.fragments.fragment.loginFragment.LoginFragment
 import com.hamza.delivertiptop.ui.fragments.salesSummaryFragment.SalesSummaryFragment
 import com.hamza.delivertiptop.utils.ActivityUtils
@@ -47,13 +48,56 @@ class ReportsFragment : BaseFragment() {
             ActivityUtils.launchFragment(requireActivity(), SalesSummaryFragment::class.java.name)
         }
         mBinding.imageViewChart.setOnClickListener {
-            mBinding.textViewSale.visibility= View.VISIBLE
+            if (!mBinding.layoutNoDataFound.isVisible){
             getData()
+            }
         }
+        mBinding.tabLayout.addOnTabSelectedListener(object :TabLayout.OnTabSelectedListener{
+            /**
+             * Called when a tab enters the selected state.
+             *
+             * @param tab The tab that was selected
+             */
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+              when (tab?.position)
+                      {
+                  1->{
+                     mBinding.layoutNoDataFound.visibility= View.VISIBLE
+                      mBinding.layoutAllViews.visibility = View.GONE
+                      mBinding.textViewSale.visibility= View.GONE
+                  }
+                  else->{
+                      mBinding.layoutNoDataFound.visibility= View.GONE
+                      mBinding.layoutAllViews.visibility = View.VISIBLE
+                  }
+
+
+              }
+            }
+
+            /**
+             * Called when a tab exits the selected state.
+             *
+             * @param tab The tab that was unselected
+             */
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+            }
+
+            /**
+             * Called when a tab that is already selected is chosen again by the user. Some applications may
+             * use this action to return to the top level of a category.
+             *
+             * @param tab The tab that was reselected.
+             */
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+            }
+        })
+
 
     }
 
     private fun getData() {
+        if (mBinding.barChart.data==null){
         val entries = ArrayList<BarEntry>()
         entries.add(BarEntry(1f, 2f))
         entries.add(BarEntry(2f, 3f))
@@ -68,7 +112,12 @@ class ReportsFragment : BaseFragment() {
         mBinding.barChart.data = data
         barDataSet.setColors(ContextCompat.getColor(mBinding.barChart.context, R.color.colorAccent),
         )
-        mBinding.barChart.animateY(5000)
+        mBinding.barChart.animateY(500)
+
+        }
+        mBinding.barChart.visibility= if (mBinding.barChart.isVisible) View.GONE else View.VISIBLE
+        mBinding.textViewSale.visibility= if (mBinding.textViewSale.isVisible) View.GONE else View.VISIBLE
+
     }
 
 }
