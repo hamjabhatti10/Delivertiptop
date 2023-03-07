@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.fragments.registerFragment.RegisterFragment">
+
+
+            <ImageView
+                android:id="@+id/imageViewDelivertiptop"
+                android:layout_width="@dimen/_350dp"
+                android:layout_height="@dimen/_300dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/delivertiptop" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Sign Up" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45dp"
+            android:hint="@string/enter_your_name"
+            android:layout_marginTop="@dimen/_3dp"
+            android:paddingHorizontal="@dimen/_5dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/email" />
+
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/enter_your_email"
+            android:paddingHorizontal="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Business Name" />
+
+
+        <EditText
+            android:id="@+id/editTextBusinessName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45dp"
+            android:hint="@string/enter_your_business_name"
+            android:paddingHorizontal="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Phone Number" />
+
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45dp"
+            android:hint="@string/enter_your_phone_number"
+            android:paddingHorizontal="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_25dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Sign Up" />
+
+    </LinearLayout>
+
+    </LinearLayout>

@@ -9,6 +9,9 @@ import android.view.ViewGroup
 import com.hamza.delivertiptop.R
 import com.hamza.delivertiptop.databinding.FragmentBalanceBinding
 import com.hamza.delivertiptop.ui.base.BaseFragment
+import com.hamza.delivertiptop.ui.fragments.transferFragment.TransferFragment
+import com.hamza.delivertiptop.ui.fragments.verificationFragment.VerificationFragment
+import com.hamza.delivertiptop.utils.ActivityUtils
 
 class BalanceFragment : BaseFragment() {
 
@@ -27,5 +30,17 @@ class BalanceFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(BalanceViewModel::class.java)
+        setListeners()
+    }
+
+    private fun setListeners() {
+        mBinding.buttonTransferFunds.setOnClickListener {
+            ActivityUtils.launchFragment(requireActivity(), TransferFragment::class.java.name)
+        }
+        mBinding.buttonInstantTransfer.setOnClickListener {
+            ActivityUtils.launchFragment(requireActivity(), TransferFragment::class.java.name)
+        }
+
+
     }
 }

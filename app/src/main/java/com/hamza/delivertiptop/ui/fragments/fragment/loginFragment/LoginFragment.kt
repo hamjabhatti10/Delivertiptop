@@ -10,6 +10,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.hamza.delivertiptop.databinding.FragmentLoginBinding
 import com.hamza.delivertiptop.ui.base.BaseFragment
+import com.hamza.delivertiptop.ui.fragments.recoverFragment.RecoverFragment
+import com.hamza.delivertiptop.ui.fragments.registerFragment.RegisterFragment
 import com.hamza.delivertiptop.ui.fragments.verificationFragment.VerificationFragment
 import com.hamza.delivertiptop.utils.ActivityUtils
 
@@ -37,6 +39,12 @@ class LoginFragment : BaseFragment() {
 
         mBinding.buttonSignIn.setOnClickListener {
             validation()
+        }
+        mBinding.buttonRegister.setOnClickListener {
+            ActivityUtils.launchFragment(requireActivity(), RegisterFragment::class.java.name)
+        }
+        mBinding.textViewForgotPassword.setOnClickListener {
+            ActivityUtils.launchFragment(requireActivity(), RecoverFragment::class.java.name)
         }
     }
 

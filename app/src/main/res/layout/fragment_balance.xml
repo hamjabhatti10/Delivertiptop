@@ -25,13 +25,12 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="-10dp"
             android:background="@android:color/darker_gray"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Available"
+            android:text="@string/available"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="@dimen/_30sp"
@@ -41,34 +40,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="$0.00"
+            android:text="@string/_0_00"
             android:textStyle="bold"
             android:textSize="@dimen/_30sp"
             android:gravity="center"/>
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/_1dp"
             android:background="@android:color/darker_gray"/>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/_10dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:text="TRANSFER FUNDS (2-3 BUSINESS DAYS)"
-            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
-            android:layout_marginEnd="@dimen/_10dp"/>
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/_10dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:text="INSTANT TRANSFER (INSTANT 3% FEE)"
-            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
-            android:layout_marginEnd="@dimen/_10dp"/>
+
+            <Button
+                android:id="@+id/buttonTransferFunds"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/transfer_funds_2_3_business_days" />
+
+            <Button
+                android:id="@+id/buttonInstantTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/instant_transfer_3_fee" />
+
+        </LinearLayout>
+
+
 
         <TextView
             android:layout_width="match_parent"

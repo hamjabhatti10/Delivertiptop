@@ -15,17 +15,16 @@
 
         <ImageView
             android:id="@+id/imageViewDelivertiptop"
-            android:layout_width="@dimen/_200dp"
-            android:layout_height="@dimen/_200dp"
+            android:layout_width="@dimen/_350dp"
+            android:layout_height="@dimen/_300dp"
+            android:scaleType="fitXY"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_20dp"
             android:src="@drawable/delivertiptop" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/_30sp"
-            android:layout_marginTop="@dimen/_35dp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="@string/sign_in" />

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_30dp"
+        tools:context=".ui.fragments.recoverFragment.RecoverFragment">
+
+        <ImageView
+            android:id="@+id/imageViewDelivertiptop"
+            android:layout_width="@dimen/_350dp"
+            android:layout_height="@dimen/_300dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/delivertiptop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter Email address for recover
+your account"
+            android:layout_marginTop="@dimen/_50dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_20dp"
+            android:textColor="@color/color_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/email_address" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45dp"
+            android:hint="@string/email"
+            android:layout_marginTop="@dimen/_3dp"
+            android:paddingHorizontal="@dimen/_5dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <Button
+            android:id="@+id/buttonRecover"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Recover" />
+
+    </LinearLayout>
+</layout>

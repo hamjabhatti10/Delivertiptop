@@ -10,8 +10,11 @@ import com.hamza.delivertiptop.databinding.FragmentMoreBinding
 import com.hamza.delivertiptop.ui.base.BaseFragment
 import com.hamza.delivertiptop.ui.fragments.accountFragment.AccountFragment
 import com.hamza.delivertiptop.ui.fragments.balanceFragment.BalanceFragment
+import com.hamza.delivertiptop.ui.fragments.bankAccount.BankAccountFragment
+import com.hamza.delivertiptop.ui.fragments.businessInformation.BusinessInformationFragment
 import com.hamza.delivertiptop.ui.fragments.moreBalanceFragment.MoreBalanceFragment
 import com.hamza.delivertiptop.ui.fragments.reportsFragment.ReportsFragment
+import com.hamza.delivertiptop.ui.fragments.transferFragment.TransferFragment
 import com.hamza.delivertiptop.utils.ActivityUtils
 
 class MoreFragment : BaseFragment() {
@@ -39,36 +42,52 @@ class MoreFragment : BaseFragment() {
             ActivityUtils.launchFragment(requireActivity(), AccountFragment::class.java.name)
         }
         mBinding.textViewBalance.setOnClickListener {
-            ActivityUtils.launchFragment(requireActivity(), MoreBalanceFragment::class.java.name)
+            ActivityUtils.launchFragment(requireActivity(), BalanceFragment::class.java.name)
         }
         mBinding.textViewReports.setOnClickListener {
             ActivityUtils.launchFragment(requireActivity(), ReportsFragment::class.java.name)
         }
+        mBinding.textViewBusinessInformation.setOnClickListener {
+            ActivityUtils.launchFragment(requireActivity(), BusinessInformationFragment::class.java.name)
+        }
+        mBinding.textViewTransfer.setOnClickListener {
+            ActivityUtils.launchFragment(requireActivity(), TransferFragment::class.java.name)
+        }
+        mBinding.textViewBankAccount.setOnClickListener {
+            ActivityUtils.launchFragment(requireActivity(), BankAccountFragment::class.java.name)
+        }
         mBinding.textViewItems.setOnClickListener {
-            Toast.makeText(requireActivity(), "please contact to customer support to activate message", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireActivity(), "please contact to customer support to activate message " +
+                    "info@deliverytiptop", Toast.LENGTH_SHORT).show()
         }
         mBinding.textViewCustomers.setOnClickListener {
-            Toast.makeText(requireActivity(), "please contact to customer support to activate message", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireActivity(), "please contact to customer support to activate message " +
+                    "info@deliverytiptop", Toast.LENGTH_SHORT).show()
 
         }
         mBinding.textViewOnlineCheckOut.setOnClickListener {
-            Toast.makeText(requireActivity(), "please contact to customer support to activate message", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireActivity(), "please contact to customer support to activate message " +
+                    "info@deliverytiptop", Toast.LENGTH_SHORT).show()
 
         }
         mBinding.textViewTeams.setOnClickListener {
-            Toast.makeText(requireActivity(), "please contact to customer support to activate message", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireActivity(), "please contact to customer support to activate message " +
+                    "info@deliverytiptop", Toast.LENGTH_SHORT).show()
 
         }
         mBinding.textViewAddOns.setOnClickListener {
-            Toast.makeText(requireActivity(), "please contact to customer support to activate message", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireActivity(), "please contact to customer support to activate message " +
+                    "info@deliverytiptop", Toast.LENGTH_SHORT).show()
 
         }
         mBinding.textViewRewardsAndReferrals.setOnClickListener {
-            Toast.makeText(requireActivity(), "please contact to customer support to activate message", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireActivity(), "please contact to customer support to activate message " +
+                    "info@deliverytiptop", Toast.LENGTH_SHORT).show()
 
         }
         mBinding.textViewSupport.setOnClickListener {
-            Toast.makeText(requireActivity(), "please contact to customer support to activate message", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireActivity(), "please contact to customer support to activate message " +
+                    "info@deliverytiptop", Toast.LENGTH_SHORT).show()
 
         }
     }

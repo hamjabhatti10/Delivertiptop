@@ -37,15 +37,7 @@ class AccountFragment : Fragment() {
     }
 
     private fun setListeners() {
-        mBinding.textViewBusinessInformation.setOnClickListener {
-            ActivityUtils.launchFragment(requireActivity(), BusinessInformationFragment::class.java.name)
-        }
-        mBinding.textViewTransfer.setOnClickListener {
-            ActivityUtils.launchFragment(requireActivity(), TransferFragment::class.java.name)
-        }
-        mBinding.textViewBankAccount.setOnClickListener {
-            ActivityUtils.launchFragment(requireActivity(), BankAccountFragment::class.java.name)
-        }
+
     }
 
 }
