@@ -97,9 +97,11 @@
     <string name="enter_your_email">Enter your Email</string>
     <string name="enter_your_business_name">Enter your Business Name</string>
     <string name="enter_your_phone_number">Enter your Phone Number</string>
-    <string name="transfer_funds_2_3_business_days">TRANSFER FUNDS(2-3 BUSINESS DAYS)</string>
+    <string name="transfer_funds_2_3_business_days">TRANSFER FUNDS (2-3 BUSINESS DAYS)</string>
     <string name="instant_transfer_3_fee">INSTANT TRANSFER(3% FEE</string>
     <string name="available">Available</string>
     <string name="_0_00">$0.00</string>
+    <string name="instant_transfer_instant_3_fee">INSTANT TRANSFER (INSTANT, 3 % FEE)</string>
+    <string name="sales_detail">Sales Detail</string>
 
 </resources>

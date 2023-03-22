@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10dp"
         android:gravity="center_horizontal"
-        android:textColor="@color/black"
+        android:textColor="@color/color_black"
         android:text="we'll also updated your linked account for next business day transfers which is shown
 in your bank account settings."/>
 
@@ -72,6 +72,7 @@ in your bank account settings."/>
         android:layout_marginTop="@dimen/_40dp"
         android:layout_marginStart="@dimen/_20dp"
         android:layout_marginEnd="@dimen/_20dp"
+        android:textAllCaps="false"
         android:text="@string/link_account"/>
 
     <androidx.appcompat.widget.AppCompatButton

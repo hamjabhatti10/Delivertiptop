@@ -58,6 +58,30 @@
             android:textAllCaps="false"
             android:text="@string/transfer"/>
 
+        <Button
+            android:id="@+id/buttonTransferFunds"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/transfer_funds_2_3_business_days" />
+
+        <Button
+            android:id="@+id/buttonInstantTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/instant_transfer_instant_3_fee" />
+
 
 
     </LinearLayout>

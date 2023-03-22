@@ -163,7 +163,7 @@ different time frame."
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5dp"
             android:padding="@dimen/_10dp"
-            android:text="SALES SUMMARY: OVERVIEW"
+            android:text="Sales Summary: Overview"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
@@ -330,22 +330,13 @@ different time frame."
             android:textColor="@color/black"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageViewGrossSale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/line2"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="108dp"
-            android:layout_marginEnd="@dimen/_10dp"
-            android:src="@drawable/ic_baseline_more_horiz_24"
-            app:tint="@color/colorAccent" />
+
 
         <TextView
             android:id="@+id/textViewDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageViewGrossSale"
+            android:layout_below="@+id/textViewGrossSale"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/_10dp"
             android:text="02:06:2023"

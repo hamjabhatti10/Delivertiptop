@@ -17,7 +17,7 @@
             android:textSize="@dimen/_40sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="@string/sales_summary" />
+            android:text="@string/sales_detail" />
 
 
 
